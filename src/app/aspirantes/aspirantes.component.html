@@ -7,59 +7,71 @@
     </div>
 
     <section>
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicadores de carrusel -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-          </ol>
-
-          <!-- Contenido del carrusel -->
+      <div class="myCarusel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="10000">
               <img
                 src="https://www.utleon.edu.mx/resource/img/banners/0%20Roll%20Up%20Aspirante%202_202209140216.JPG"
-                alt="Imagen 1"
-                style="width: 600px; height: 400px"
+                class="d-block w-100"
+                alt="..."
               />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="2000">
               <img
                 src="https://www.utleon.edu.mx/resource/img/banners/0%20Roll%20Up%20Aspirante%201_202209140218.PNG"
-                alt="Imagen 2"
-                style="width: 600px; height: 400px"
+                class="d-block w-100"
+                alt="..."
               />
             </div>
             <div class="carousel-item">
               <img
                 src="https://th.bing.com/th/id/R.a67a32e4a847e4c0fbd124d70314fcad?rik=EW34e63kIRqgcA&pid=ImgRaw&r=0"
-                alt="Imagen 3"
-                style="width: 600px; height: 400px"
+                class="d-block w-100"
+                alt="..."
               />
             </div>
           </div>
-
-          <!-- Controles de carrusel -->
-          <a
+          <button
             class="carousel-control-prev"
-            href="#myCarousel"
-            role="button"
+            type="button"
+            data-bs-target="#carouselExampleDark"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </a>
-          <a
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
             class="carousel-control-next"
-            href="#myCarousel"
-            role="button"
+            type="button"
+            data-bs-target="#carouselExampleDark"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </a>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
